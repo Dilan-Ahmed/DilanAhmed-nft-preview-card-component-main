@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300&display=swap');
+    </style>
+  </head>
+
+  <body>
+    
+    <main>
+      
+ <!-- NFT Image -->     
+      <div class="nft-image">
+        <div class="div-imgOne">
+          <img class="imgOne" src="images/image-equilibrium.jpg" alt="NFT Image"/>
+          <!-- Why I created another div here within the div-imgOne?
+                basically we need to have another box to lay over the image of the nft
+                that we have when we move the mouse indicator or touch finger over the image
+            -->
+          <div class="effect"></div>
+        </div>
+    </div>
+
+<!-- NFT: info-->
+      <div class="nft-info">
+        <h1>Equilibrium #3429</h1>
+        <p id="pOne">Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+
+<!-- NFT: price and time -->
+
+      <div class="price-time">
+        <div class="nftPrice">
+          <img class="ethLogo" src="images/icon-ethereum.svg" />
+          <span id="eth">0.041 ETH</span>
+        </div>
+        <div class="nftTime">
+        <img class="clock" src="images/icon-clock.svg" />
+        <span id="days">3 days left</span>
+        </div>
+      </div>
+
+      <hr class="line">
+
+<!-- NFT: creator-info -->      
+      <div class="creator-info">
+       <img class="proPic" src="images/image-avatar.png">
+        <p id="pThree">Creation of <span>Jules Wyvern<span></p>
+          
+        </div>
+      <!--<hr class="line"/> -->
+
+<!-- foot note 
+      <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dilan Ahmed</a>
+      </div>
+      </footer> -->
+    </main>
+  </body>
+</html>
